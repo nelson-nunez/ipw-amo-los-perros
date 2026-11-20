@@ -201,6 +201,30 @@ function actualizarTabla() {
 }
 // #endregion
 
+// #region Almacenamiento local
+const CLAVE_SOCIOS = "amolosperros.sociosRegistrados";
+const CANTIDAD_SOCIOS_BASE = socios.length;
+
+// Guarda en el navegador solo los socios cargados por el usuario (no los de datos.js)
+function guardarSocios() {
+    try {
+        localStorage.setItem(CLAVE_SOCIOS, JSON.stringify(socios.slice(CANTIDAD_SOCIOS_BASE)));
+    } catch (error) {
+        // Almacenamiento no disponible o lleno: el sitio sigue funcionando sin persistencia
+    }
+}
+
+// Recupera los socios guardados en visitas anteriores
+function cargarSocios() {
+    try {
+        const guardados = JSON.parse(localStorage.getItem(CLAVE_SOCIOS));
+        if (Array.isArray(guardados)) socios.push(...guardados);
+    } catch (error) {
+        localStorage.removeItem(CLAVE_SOCIOS);
+    }
+}
+// #endregion
+
 // #region Acciones
 // TODO: ordenar los socios por categoria
 function registrarSocio() {
@@ -220,6 +244,7 @@ function registrarSocio() {
         monto: Number(txtMonto.value),
         fecha: txtFecha.value
     });
+    guardarSocios();
     actualizarTabla();
     mostrarMensaje(`Gracias por sumarte como ${CATEGORIAS[selCategoria.value].nombre}.`);
     return true;
@@ -293,6 +318,7 @@ document.addEventListener("keydown", (e) => {
 
 // #region Inicio
 document.addEventListener("DOMContentLoaded", () => {
+    cargarSocios();
     txtFecha.value = fechaHoy();
     actualizarContadorNombre();
     mostrarInfoCategoria();

@@ -19,8 +19,8 @@ Trabajo práctico integrador de Introducción a la Programación Web
 
 ## Tecnologías
 - HTML
-- CSS (flexbox y grid)
-- JavaScript, sin librerías
+- CSS 
+- JavaScript
 
 ## Estructura
 ```
@@ -44,7 +44,7 @@ Se puede abrir `index.html` directo en el navegador.
 Para ir probando cambios uso la extensión Live Server.
 
 ## Publicación
-https://nelson-nunez.github.io/amolosperros/
+https://github.com/nelson-nunez/ipw-amo-los-perros.git
 
 ## Créditos de imágenes
 Falta completar con el autor y el enlace de cada foto. El detalle de qué foto va en cada página está en `img/leeme.txt`.
