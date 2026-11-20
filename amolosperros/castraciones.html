@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Castraciones gratuitas para mascotas de Sáenz Peña: cantidad por mes y fechas de las próximas campañas del quirófano móvil.">
+    <title>Castraciones | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/datos.js" defer></script>
+    <script src="js/tablas.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <!-- Header -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+             
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html">En tránsito</a></li>
+                <li><a href="en-adopcion.html">En adopción</a></li>
+                <li><a href="atencion-medica.html">Atención médica</a></li>
+                <li><a href="castraciones.html" aria-current="page">Castraciones</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="asociate.html">Asociate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Presentacion -->
+        <section class="tarjeta" aria-labelledby="tituloCastraciones">
+            <h2 id="tituloCastraciones">Castraciones gratuitas</h2>
+            <figure>
+                <img src="img/castraciones-campana.jpg" width="1200" height="900"
+                     alt="Veterinario con barbijo apoyando la mano sobre un cachorro beige y blanco">
+                <figcaption>El quirófano móvil atiende en distintas plazas de la ciudad.</figcaption>
+            </figure>
+            <p>Castramos sin cargo a los animales del refugio y también a las mascotas de cualquier vecino
+                de la ciudad. El turno se pide por teléfono y la operación se hace en el quirófano móvil.</p>
+        </section>
+
+        <!-- Por que castrar -->
+        <section class="tarjeta" aria-labelledby="tituloPorQue">
+            <h2 id="tituloPorQue">Por qué es importante castrar</h2>
+            <p>Una perra sin castrar puede tener dos camadas por año, y cada camada son entre cuatro y ocho
+                cachorros. En tres años, una sola pareja de animales sin castrar puede dejar cientos de
+                descendientes en la calle. Rescatar nunca alcanza si no se corta el problema de raíz.</p>
+            <p>Además de evitar camadas no deseadas, la castración previene tumores de mama, infecciones de
+                útero y problemas de próstata, y baja mucho las peleas y las escapadas. Es una cirugía corta,
+                con anestesia, y el animal vuelve a casa el mismo día.</p>
+        </section>
+
+        <!-- Tabla de castraciones por mes -->
+        <section class="tarjeta" aria-labelledby="tituloTablaCastraciones">
+            <h2 id="tituloTablaCastraciones">Castraciones realizadas por mes</h2>
+            <div class="tabla-scroll">
+                <table id="tablaCastraciones">
+                    <caption>Cantidad de castraciones realizadas durante el año, por mes y por especie</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Mes</th>
+                            <th scope="col">Perros</th>
+                            <th scope="col">Gatos</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyCastraciones" aria-live="polite"></tbody>
+                    <tfoot id="tfootCastraciones"></tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Proximas campanias -->
+        <section class="tarjeta" aria-labelledby="tituloCampanias">
+            <h2 id="tituloCampanias">Próximas campañas</h2>
+            <p>Los turnos se piden por teléfono al 364 400-0000, de lunes a viernes de 10 a 17.
+                El animal tiene que llegar con 8 horas de ayuno.</p>
+            <ul>
+                <li><strong>Sábado 5 de diciembre:</strong> Plaza San Martín, de 9 a 14.</li>
+                <li><strong>Sábado 12 de diciembre:</strong> Club Social y Deportivo del barrio, de 9 a 14.</li>
+                <li><strong>Sábado 19 de diciembre:</strong> Escuela N.º 14, de 10 a 15.</li>
+                <li><strong>Sábado 9 de enero:</strong> Plaza de los Fundadores, de 9 a 13.</li>
+                <li><strong>Sábado 23 de enero:</strong> Sociedad de Fomento, de 9 a 14.</li>
+            </ul>
+            <p>Las campañas se sostienen con el aporte de las socias y los socios. Si querés que sigamos sumando fechas,
+                <a href="asociate.html">asociate</a>.</p>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+
+    <!-- Volver arriba -->
+    <button type="button" id="btnArriba">Volver arriba</button>
+</body>
+</html>

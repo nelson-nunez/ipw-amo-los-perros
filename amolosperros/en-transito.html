@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perros y gatos alojados en hogares de tránsito de Amolosperros mientras se recuperan. Sumate como hogar de tránsito.">
+    <title>En tránsito | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/datos.js" defer></script>
+    <script src="js/tablas.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+             
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html" aria-current="page">En tránsito</a></li>
+                <li><a href="en-adopcion.html">En adopción</a></li>
+                <li><a href="atencion-medica.html">Atención médica</a></li>
+                <li><a href="castraciones.html">Castraciones</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="asociate.html">Asociate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Presentacion -->
+        <section aria-labelledby="tituloTransito">
+            <h2 id="tituloTransito">Animales en tránsito</h2>
+            <p>Estos animales todavía no están disponibles para adopción: viven en una casa de familia
+                o en la veterinaria mientras terminan de recuperarse o de crecer. Cuando estén listos
+                pasan a <a href="en-adopcion.html">En adopción</a>.</p>
+            <p>Si querés recibir uno en tu casa, mirá los pasos en
+                <a href="que-hacemos.html">Qué hacemos</a> y escribinos desde
+                <a href="contacto.html">Contacto</a>.</p>
+        </section>
+
+        <!-- Tabla de animales en transito -->
+        <section class="tarjeta" aria-labelledby="tituloTablaTransito">
+            <h2 id="tituloTablaTransito">Listado de animales en tránsito</h2>
+            <div class="tabla-scroll">
+                <table id="tablaTransito">
+                    <caption>Animales alojados hoy en hogares de tránsito o en la veterinaria, con su estado</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Especie</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Hogar de tránsito</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyTransito" aria-live="polite"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Que ponemos nosotros -->
+        <section class="tarjeta" aria-labelledby="tituloAporte">
+            <h2 id="tituloAporte">Qué pone Amolosperros</h2>
+            <ul>
+                <li>El alimento balanceado que corresponde a la edad del animal.</li>
+                <li>Todas las consultas, vacunas y medicación, sin costo para la familia.</li>
+                <li>La castración antes de que el animal salga en adopción.</li>
+                <li>Un teléfono de urgencias veterinarias disponible las 24 horas.</li>
+                <li>El traslado al refugio o a la veterinaria cuando haga falta.</li>
+            </ul>
+            <p>La familia de tránsito solo pone el lugar, la paciencia y el tiempo de paseo.</p>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+
+    <!-- Volver arriba -->
+    <button type="button" id="btnArriba">Volver arriba</button>
+</body>
+</html>

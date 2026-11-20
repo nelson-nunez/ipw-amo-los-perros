@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perros y gatos en adopción en Sáenz Peña: sanos, vacunados y castrados. Mirá sus fichas y los pasos para adoptar.">
+    <title>En adopción | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/datos.js" defer></script>
+    <script src="js/tablas.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+             
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html">En tránsito</a></li>
+                <li><a href="en-adopcion.html" aria-current="page">En adopción</a></li>
+                <li><a href="atencion-medica.html">Atención médica</a></li>
+                <li><a href="castraciones.html">Castraciones</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="asociate.html">Asociate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Presentacion -->
+        <section aria-labelledby="tituloEnAdopcion">
+            <h2 id="tituloEnAdopcion">Animales en adopción</h2>
+            <p>Todos los animales de esta página están sanos, vacunados, desparasitados y castrados.
+                Se entregan con su carnet y con seguimiento durante los primeros seis meses.</p>
+            <p>La adopción es gratuita. Lo único que pedimos es una entrevista y una visita a tu casa.</p>
+        </section>
+
+        <!-- Tabla con filtro por especie -->
+        <section class="tarjeta" aria-labelledby="tituloTablaAdopcion">
+            <h2 id="tituloTablaAdopcion">Listado de animales disponibles</h2>
+            <div>
+                <label for="selEspecie">Filtrar por especie</label>
+                <select id="selEspecie">
+                    <option value="">Todos</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </select>
+            </div>
+            <p id="infoFiltro" class="info" aria-live="polite"></p>
+            <div class="tabla-scroll">
+                <table id="tablaAdopcion">
+                    <caption>Animales que esperan familia, con su edad, tamaño y hogar actual</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Especie</th>
+                            <th scope="col">Edad</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Hogar actual</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyAdopcion" aria-live="polite"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Galeria de fichas -->
+        <section aria-labelledby="tituloGaleria">
+            <h2 id="tituloGaleria">Fichas de los animales</h2>
+            <ul class="galeria">
+                <li>
+                    <figure>
+                        <img src="img/adopcion-luna.jpg" width="1200" height="1806"
+                             alt="Luna, perra mestiza de pelo claro, echada en el pasto con las orejas levantadas">
+                        <figcaption><strong>Luna</strong> - 3 años - Mediana - Tranquila y muy sociable con chicos.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/adopcion-toby.jpg" width="1200" height="1083" loading="lazy"
+                             alt="Toby, perro joven de pelo corto marrón, sentado mirando a la cámara">
+                        <figcaption><strong>Toby</strong> - 1 año - Mediano - Muy jugador, necesita paseos largos.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/adopcion-milo.jpg" width="1000" height="1298" loading="lazy"
+                             alt="Milo, perro grande de pelo negro y pecho blanco, parado en el patio">
+                        <figcaption><strong>Milo</strong> - 4 años - Grande - Ideal para una casa con patio.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/adopcion-nala.jpg" width="1200" height="1800" loading="lazy"
+                             alt="Nala, perra grande de pelo largo y hocico canoso, descansando a la sombra">
+                        <figcaption><strong>Nala</strong> - 9 años - Grande - Adulta mayor, busca una casa calma.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/adopcion-rocco.jpg" width="1200" height="1200" loading="lazy" alt="Perro en adopción">
+                        <figcaption><strong>Rocco</strong> - 6 años - Pequeño - Se lleva bien con otros perros.</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/adopcion-michi.jpg" width="1000" height="1414" loading="lazy"
+                             alt="Michi, gato gris atigrado de ojos verdes, apoyado sobre una manta">
+                        <figcaption><strong>Michi</strong> - 5 años - Mediano - Acostumbrado a vivir en departamento.</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pasos para adoptar -->
+        <section class="tarjeta" aria-labelledby="tituloPasos">
+            <h2 id="tituloPasos">Cómo adoptar</h2>
+            <ol>
+                <li>Mirá las fichas y elegí uno o dos animales que te parezca que encajan con tu casa.</li>
+                <li>Escribinos desde <a href="contacto.html">Contacto</a> con el motivo «Adopción».</li>
+                <li>Hacemos una entrevista por teléfono o en el refugio, sin apuro.</li>
+                <li>Coordinamos una visita a tu casa para ver que sea segura para el animal.</li>
+                <li>Te presentamos al animal y, si hay química, firmamos el acta de adopción.</li>
+                <li>Te lo llevás con su carnet de vacunas y el certificado de castración.</li>
+                <li>Durante seis meses nos escribimos para ver cómo va la adaptación.</li>
+            </ol>
+            <p class="acciones">
+                <a class="cta" href="contacto.html">Quiero adoptar</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+
+    <!-- Volver arriba -->
+    <button type="button" id="btnArriba">Volver arriba</button>
+</body>
+</html>

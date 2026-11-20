@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingresos, gastos y saldo de Amolosperros, publicados movimiento por movimiento. Mirá en qué usamos tu aporte.">
+    <title>Transparencia | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/datos.js" defer></script>
+    <script src="js/tablas.js" defer></script>
+</head>
+
+
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+            <p id="fechaActual"></p>
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html">En tránsito</a></li>
+                <li><a href="en-adopcion.html">En adopción</a></li>
+                <li><a href="atencion-medica.html">Atención médica</a></li>
+                <li><a href="castraciones.html">Castraciones</a></li>
+                <li><a href="transparencia.html" aria-current="page">Transparencia</a></li>
+                <li><a href="asociate.html">Asociate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Presentacion -->
+        <section aria-labelledby="tituloTransparencia">
+            <h2 id="tituloTransparencia">Transparencia</h2>
+            <p>No recibimos subsidios del Estado: todo lo que entra viene de las cuotas de las socias y los socios, de las
+                donaciones del barrio y de las rifas y ferias que organizamos. Por eso publicamos cada
+                movimiento, con fecha y concepto.</p>
+            <p>El balance completo, con los comprobantes, se presenta en la asamblea anual de la asociación
+                y queda a disposición de cualquier socio que lo pida.</p>
+        </section>
+
+        <!-- Tabla de movimientos -->
+        <section class="tarjeta" aria-labelledby="tituloTablaMovimientos">
+            <h2 id="tituloTablaMovimientos">Ingresos y gastos</h2>
+            <div class="tabla-scroll">
+                <table id="tablaMovimientos">
+                    <caption>Movimientos de ingresos y gastos del período, con el saldo disponible</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Concepto</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Monto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyMovimientos" aria-live="polite"></tbody>
+                    <tfoot id="tfootMovimientos"></tfoot>
+                </table>
+            </div>
+            <p>Cada movimiento figura como ingreso o gasto, con su fecha y su monto.</p>
+        </section>
+
+        <!-- En que usamos el aporte -->
+        <section class="tarjeta" aria-labelledby="tituloUso">
+            <h2 id="tituloUso">En qué usamos tu aporte</h2>
+            <ul>
+                <li><strong>Alimento:</strong> unos 300 kilos de balanceado por mes, para el refugio y los tránsitos.</li>
+                <li><strong>Veterinaria:</strong> consultas, análisis, cirugías y la medicación de los tratamientos largos.</li>
+                <li><strong>Castraciones:</strong> insumos y honorarios del quirófano móvil en cada campaña.</li>
+                <li><strong>Refugio:</strong> arreglo de caniles, mantas, limpieza y la luz del galpón.</li>
+                <li><strong>Traslados:</strong> combustible de la camioneta que usamos en los rescates.</li>
+            </ul>
+            <p>Ningún integrante del equipo cobra un sueldo: todo lo que entra va a los animales.</p>
+            <p class="acciones">
+                <a class="cta" href="asociate.html">Quiero colaborar</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+</body>
+
+
+
+</html>

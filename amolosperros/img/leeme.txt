@@ -1,0 +1,56 @@
+Imagenes del sitio Amolosperros
+===============================
+
+Que foto va en cada lugar. Todas las fotos tienen que pesar menos de 200 KB
+(JPEG o WebP) y medir como maximo 1200 px de ancho.
+
+Identidad
+---------
+logo.png                        Logo de la ONG, se ve en el header de las 10 paginas.
+favicon.png                     Icono de la pestania, 32x32 o 48x48 px.
+
+Inicio (index.html)
+-------------------
+actividad-adopcion.jpg          Foto grande de bienvenida: un animal esperando familia.
+novedad-adopcion.jpg            Novedad "Milo encontro familia": adoptante con su perro.
+novedad-colecta.jpg             Novedad "Colecta de alimento": alimento o comedero.
+castraciones-campana.jpg        Novedad "Nueva campania": quirofano movil o veterinario.
+
+Quienes somos (quienes-somos.html)
+----------------------------------
+quienes-somos-refugio.jpg       El refugio por fuera o el patio con animales.
+quienes-somos-equipo.jpg        Voluntarios trabajando, sin caras reconocibles.
+
+Que hacemos (que-hacemos.html)
+------------------------------
+actividad-rescate.jpg           Un rescate en la calle.
+actividad-atencion.jpg          Consulta veterinaria.
+actividad-castracion.jpg        Animal recuperandose de la castracion.
+actividad-transito.jpg          Animal en una casa de familia.
+actividad-adopcion.jpg          Entrega en adopcion (se reusa la del inicio).
+
+En adopcion (en-adopcion.html)
+------------------------------
+Una foto por animal, nombre del archivo igual al campo "foto" de js/datos.js:
+
+adopcion-luna.jpg               Luna, perra mediana de 3 anios.
+adopcion-toby.jpg               Toby, perro mediano de 1 anio.
+adopcion-milo.jpg               Milo, perro grande de 4 anios.
+adopcion-nala.jpg               Nala, perra grande de 9 anios.
+adopcion-rocco.jpg              Rocco, perro pequenio de 6 anios.
+adopcion-michi.jpg              Michi, gato mediano de 5 anios.
+
+Si se agrega un animal nuevo a js/datos.js con estado "adopcion", hay que
+sumar su foto con el nombre adopcion-<nombre>.jpg y agregar su ficha a la
+galeria de en-adopcion.html.
+
+Iconos
+------
+apple-touch-icon.png            Icono para la pantalla de inicio del celular, 180x180.
+
+Sin uso
+-------
+inicio-principal.jpg y novedad-jornada-castracion.jpg se sacaron del sitio
+porque eran las fotos originales (6000 px, 3 a 4 MB). Estan en la carpeta
+imagenes-sin-uso, al lado del plan. Si se quieren usar, hay que achicarlas a
+1200 px de ancho y menos de 200 KB.

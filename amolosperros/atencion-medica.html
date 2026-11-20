@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tratamientos veterinarios en curso de los animales de Amolosperros y cuánto falta reunir para cubrirlos. Apadriná un tratamiento.">
+    <title>Atención médica | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/datos.js" defer></script>
+    <script src="js/tablas.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+             
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html">En tránsito</a></li>
+                <li><a href="en-adopcion.html">En adopción</a></li>
+                <li><a href="atencion-medica.html" aria-current="page">Atención médica</a></li>
+                <li><a href="castraciones.html">Castraciones</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="asociate.html">Asociate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Presentacion -->
+        <section aria-labelledby="tituloAtencionMedica">
+            <h2 id="tituloAtencionMedica">Atención médica</h2>
+            <p>Todos los animales que entran al refugio pasan por una revisión clínica, vacunas y
+                desparasitación. Algunos llegan con problemas que necesitan un tratamiento largo y caro,
+                y esos son los que publicamos acá.</p>
+            <p id="totalPendiente"></p>
+        </section>
+
+        <!-- Tabla de tratamientos -->
+        <section class="tarjeta" aria-labelledby="tituloTablaTratamientos">
+            <h2 id="tituloTablaTratamientos">Tratamientos en curso</h2>
+            <div class="tabla-scroll">
+                <table id="tablaTratamientos">
+                    <caption>Tratamientos veterinarios abiertos y su costo estimado</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Animal</th>
+                            <th scope="col">Problema</th>
+                            <th scope="col">Tratamiento necesario</th>
+                            <th scope="col">Costo estimado</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyTratamientos" aria-live="polite"></tbody>
+                </table>
+            </div>
+            <p>Los costos son estimados por nuestras veterinarias amigas, que nos cobran precio de
+                asociación. Un «pendiente» significa que todavía no juntamos la plata para empezar.</p>
+        </section>
+
+        <!-- Como ayudar -->
+        <section class="tarjeta" aria-labelledby="tituloApadrinar">
+            <h2 id="tituloApadrinar">Cómo ayudar con un tratamiento</h2>
+            <p>Podés apadrinar un animal en tratamiento: elegís la categoría «Padrino» al asociarte y tu
+                aporte va directo a su medicación y a sus controles.</p>
+            <ul>
+                <li>Te mandamos la ficha del animal y el detalle de lo que necesita.</li>
+                <li>Recibís la novedad cada vez que vuelve a control.</li>
+                <li>Cuando se recupera, sos la primera persona en enterarte de su adopción.</li>
+            </ul>
+            <p class="acciones">
+                <a class="cta" href="asociate.html">Apadrinar un tratamiento</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+
+    <!-- Volver arriba -->
+    <button type="button" id="btnArriba">Volver arriba</button>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dirección, horario, teléfono y mapa del refugio de Amolosperros en Presidencia Roque Sáenz Peña, Chaco. Escribinos.">
+    <title>Contacto | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/contacto.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+             
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html">En tránsito</a></li>
+                <li><a href="en-adopcion.html">En adopción</a></li>
+                <li><a href="atencion-medica.html">Atención médica</a></li>
+                <li><a href="castraciones.html">Castraciones</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="asociate.html">Asociate</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Datos de contacto -->
+        <section class="tarjeta" aria-labelledby="tituloContacto">
+            <h2 id="tituloContacto">Dónde encontrarnos</h2>
+            <ul>
+                <li><strong>Refugio:</strong> Calle 25 N.º 1234, Presidencia Roque Sáenz Peña, Chaco.</li>
+                <li><strong>Horario de atención:</strong> lunes a sábado de 9 a 18.</li>
+                <li><strong>Teléfono y WhatsApp:</strong> 364 400-0000.</li>
+                <li><strong>Correo:</strong> hola@amolosperros.org.ar</li>
+                <li><strong>Redes:</strong>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> y
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>.</li>
+            </ul>
+            <p>Para urgencias con un animal rescatado, llamá por teléfono: el correo lo leemos una vez por día.</p>
+        </section>
+
+        <!-- Mapa -->
+        <section class="tarjeta" aria-labelledby="tituloMapa">
+            <h2 id="tituloMapa">Cómo llegar</h2>
+            <iframe title="Ubicación de Amolosperros en Presidencia Roque Sáenz Peña, Chaco"
+                    src="https://www.google.com/maps?q=Presidencia+Roque+S%C3%A1enz+Pe%C3%B1a,+Chaco,+Argentina&amp;output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Estamos a 10 cuadras de la plaza central, sobre la mano derecha.
+                Hay estacionamiento sobre la calle lateral.</p>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section aria-labelledby="tituloFormContacto">
+            <h2 id="tituloFormContacto">Escribinos</h2>
+            <form id="formContacto" novalidate>
+                <fieldset class="tarjeta">
+                    <legend>Tus datos</legend>
+                    <div>
+                        <label for="txtNombre">Nombre y apellido</label>
+                        <input id="txtNombre" type="text" autocomplete="name" maxlength="60" required
+                               aria-describedby="err-txtNombre">
+                        <span id="err-txtNombre" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="txtEmail">Correo electrónico</label>
+                        <input id="txtEmail" type="email" autocomplete="email" maxlength="80" required
+                          aria-describedby="err-txtEmail">
+                        <small>Te respondemos a esta dirección.</small>
+                        <span id="err-txtEmail" role="alert"></span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="tarjeta">
+                    <legend>Tu consulta</legend>
+                    <div>
+                        <label for="selMotivo">Motivo</label>
+                        <select id="selMotivo" required aria-describedby="err-selMotivo">
+                            <option value="">Seleccioná un motivo</option>
+                            <option value="adopcion">Adopción</option>
+                            <option value="transito">Tránsito</option>
+                            <option value="donacion">Donación</option>
+                            <option value="voluntariado">Voluntariado</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <span id="err-selMotivo" role="alert"></span>
+                    </div>
+                    <p id="infoMotivo" class="info" aria-live="polite"></p>
+                    <div>
+                        <label for="txtMensaje">Mensaje</label>
+                        <textarea id="txtMensaje" maxlength="500" required
+                                  aria-describedby="contadorMensaje err-txtMensaje"></textarea>
+                        <small id="contadorMensaje" aria-live="polite"></small>
+                        <span id="err-txtMensaje" role="alert"></span>
+                    </div>
+                </fieldset>
+
+                <div class="acciones">
+                    <button type="submit">Enviar consulta</button>
+                    <button type="button" id="btnLimpiar" class="secundario">Limpiar formulario</button>
+                </div>
+                <p id="mensajeEstado" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+
+    <!-- Volver arriba -->
+    <button type="button" id="btnArriba">Volver arriba</button>
+</body>
+</html>

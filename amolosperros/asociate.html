@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asociate a Amolosperros con una cuota mensual, apadriná un animal o hacé una donación única para sostener el refugio.">
+    <title>Asociate | Amolosperros</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/comun.js" defer></script>
+    <script src="js/datos.js" defer></script>
+    <script src="js/asociate.js" defer></script>
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+
+    <!-- Encabezado -->
+    <header>
+        <img class="logo" src="img/logo.png" width="320" height="304" alt="Logo de Amolosperros: una huella dentro de un corazón">
+        <div class="marca">
+            <h1>Amolosperros</h1>
+            <p class="lema">Rescatamos, curamos y buscamos familia para los perros y gatos de Sáenz Peña.</p>
+             
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="Principal">
+            <button type="button" id="btnMenu" aria-expanded="false" aria-controls="menuPrincipal"><span aria-hidden="true">☰</span> Menú</button>
+            <ul id="menuPrincipal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a href="en-transito.html">En tránsito</a></li>
+                <li><a href="en-adopcion.html">En adopción</a></li>
+                <li><a href="atencion-medica.html">Atención médica</a></li>
+                <li><a href="castraciones.html">Castraciones</a></li>
+                <li><a href="transparencia.html">Transparencia</a></li>
+                <li><a href="asociate.html" aria-current="page">Asociate</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de la pagina -->
+    <main id="contenido">
+        <!-- Presentasion -->
+        <section aria-labelledby="tituloAsociate">
+            <h2 id="tituloAsociate">Asociate a Amolosperros</h2>
+            <p>Con una cuota mensual sostenés el alimento, los tratamientos y las campañas de castración.
+                Podés elegir una cuota fija todos los meses, apadrinar un animal en tratamiento o hacer una
+                donación única.</p>
+            <p>El aporte mínimo es de 3000 pesos por mes. Los datos que nos dejás los usamos solo para
+                contactarte: no los compartimos con nadie.</p>
+        </section>
+
+        <!-- Formulario de socios -->
+        <section aria-labelledby="tituloFormulario">
+            <h2 id="tituloFormulario">Formulario de asociación</h2>
+            <form id="formSocio" novalidate>
+                <fieldset class="tarjeta">
+                    <legend>Tus datos</legend>
+                    <div>
+                        <label for="txtNombre">Nombre y apellido</label>
+                        <input id="txtNombre" type="text" autocomplete="name" maxlength="60" required
+                               aria-describedby="contadorNombre err-txtNombre">
+                        <small id="contadorNombre" aria-live="polite"></small>
+                        <span id="err-txtNombre" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="txtEmail">Correo electrónico</label>
+                        <input id="txtEmail" type="email" autocomplete="email" maxlength="80" required
+                               aria-describedby="err-txtEmail">
+                        <small>Te escribimos solo para confirmarte el alta.</small>
+                        <span id="err-txtEmail" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="txtTelefono">Teléfono</label>
+                        <input id="txtTelefono" type="tel" inputmode="numeric" autocomplete="tel" maxlength="13" required
+                               aria-describedby="ayudaTelefono err-txtTelefono">
+                        <small id="ayudaTelefono">Solo números, entre 8 y 13 dígitos, con característica.</small>
+                        <span id="err-txtTelefono" role="alert"></span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="tarjeta">
+                    <legend>Tu aporte</legend>
+                    <div>
+                        <label for="selCategoria">Categoría</label>
+                        <select id="selCategoria" required aria-describedby="err-selCategoria">
+                            <option value="">Seleccioná una categoría</option>
+                            <option value="colaborador">Socio colaborador</option>
+                            <option value="padrino">Padrino</option>
+                            <option value="unico">Donante único</option>
+                        </select>
+                        <span id="err-selCategoria" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="txtMonto">Monto del aporte (en pesos)</label>
+                        <input id="txtMonto" type="number" min="3000" step="500" required
+                               aria-describedby="ayudaMonto err-txtMonto">
+                        <small id="ayudaMonto">El aporte mínimo es de 3000 pesos.</small>
+                        <span id="err-txtMonto" role="alert"></span>
+                    </div>
+                    <div>
+                        <label for="txtFecha">Desde cuándo querés colaborar</label>
+                        <input id="txtFecha" type="date" required aria-describedby="err-txtFecha">
+                        <span id="err-txtFecha" role="alert"></span>
+                    </div>
+                    <p id="infoCategoria" class="info" aria-live="polite"></p>
+                </fieldset>
+
+                <fieldset class="tarjeta">
+                    <legend>Condiciones</legend>
+                    <div class="casilla">
+                        <input id="chkCondiciones" type="checkbox" required aria-describedby="err-chkCondiciones">
+                        <label for="chkCondiciones">Acepto que mis datos se usen solo para contactarme</label>
+                        <span id="err-chkCondiciones" role="alert"></span>
+                    </div>
+                </fieldset>
+
+                <div class="acciones">
+                    <button type="submit">Asociarme</button>
+                    <button type="button" id="btnLimpiar" class="secundario">Limpiar formulario</button>
+                </div>
+                <p id="mensajeEstado" role="status"></p>
+            </form>
+        </section>
+
+        <!-- Tabla de socios y donantes -->
+        <section class="tarjeta" aria-labelledby="tituloTablaSocios">
+            <h2 id="tituloTablaSocios">Socios y donantes</h2>
+            <p>Por privacidad mostramos solo las iniciales de cada persona.</p>
+            <p id="infoCategorias" class="info" aria-live="polite"></p>
+            <div class="tabla-scroll">
+                <table id="tablaSocios">
+                    <caption>Listado de socios y donantes, con su categoría y su aporte</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Socio</th>
+                            <th scope="col">Categoría</th>
+                            <th scope="col">Aporte</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodySocios" aria-live="polite"></tbody>
+                    <tfoot id="tfootSocios"></tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- Otras formas de ayudar -->
+        <section class="tarjeta" aria-labelledby="tituloOtrasFormas">
+            <h2 id="tituloOtrasFormas">Otras formas de ayudar</h2>
+            <ul>
+                <li>Ser <a href="que-hacemos.html">hogar de tránsito</a> y alojar un animal en tu casa.</li>
+                <li>Donar alimento, mantas o medicación en el refugio, de lunes a sábado de 9 a 18.</li>
+                <li>Sumarte como voluntario a las campañas de castración los fines de semana.</li>
+                <li>Difundir las fichas de <a href="en-adopcion.html">En adopción</a> entre tus conocidos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer>
+        <p><strong>Amolosperros</strong> - Asociación civil sin fines de lucro - Presidencia Roque Sáenz Peña, Chaco</p>
+        <ul class="enlaces-pie">
+            <li><a href="asociate.html">Asociate</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+        <p>Universidad Abierta Interamericana</p>
+        <p>Materia: Introducción a la Programación Web</p>
+        <p>Alumno/Autor: Nuñez Nelson</p>
+        <p>&copy; 2026 Amolosperros</p>
+    </footer>
+
+    <!-- Volver arriba -->
+    <button type="button" id="btnArriba">Volver arriba</button>
+</body>
+</html>
